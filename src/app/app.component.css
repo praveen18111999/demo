@@ -1,7 +1,10 @@
-h1{
-    color: red;
-    font-size: 2em;
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
     text-align: center;
-    text-decoration: double;
-    
-}
+    vertical-align: middle;
+  }
+  
