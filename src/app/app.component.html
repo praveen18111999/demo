@@ -1,29 +1,51 @@
-<div class="container my-5">
-  <h2 class="text-center mb-4">10-Day Weight Loss Diet Plan</h2>
-  <table class="table table-bordered table-striped">
-    <thead class="table-dark">
-      <tr>
-        <th>Day</th>
-        <th>Breakfast (9g Koolu + 2 Eggs)</th>
-        <th>Lunch (200g Chicken/Eggs + Side Dish)</th>
-        <th>Dinner (2 Eggs + Veggies)</th>
-        <th>Fruit Snack (Mid-Morning/Evening)</th>
-        <th>Probiotics (Yogurt)</th>
-        <th>Total Calories</th>
-        <th>Total Protein</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let day of dietPlan">
-        <td>{{ day.day }}</td>
-        <td>{{ day.breakfast }}</td>
-        <td>{{ day.lunch }}</td>
-        <td>{{ day.dinner }}</td>
-        <td>{{ day.fruitSnack }}</td>
-        <td>{{ day.probiotics }}</td>
-        <td>{{ day.totalCalories }}</td>
-        <td>{{ day.totalProtein }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Nutrition Plan</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Lunch</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Dinner</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Fruit Snack</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Probiotics</th>
+            <th>Calories</th>
+            <th>Protein</th>
+            <th>Total Calories</th>
+            <th>Total Protein</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let day of nutritionData">
+            <td>{{ day.Day }}</td>
+            <td>{{ day.Breakfast }}</td>
+            <td>{{ day.BreakfastCalories }}</td>
+            <td>{{ day.BreakfastProtein }}</td>
+            <td>{{ day.Lunch }}</td>
+            <td>{{ day.LunchCalories }}</td>
+            <td>{{ day.LunchProtein }}</td>
+            <td>{{ day.Dinner }}</td>
+            <td>{{ day.DinnerCalories }}</td>
+            <td>{{ day.DinnerProtein }}</td>
+            <td>{{ day.FruitSnack }}</td>
+            <td>{{ day.FruitSnackCalories }}</td>
+            <td>{{ day.FruitSnackProtein }}</td>
+            <td>{{ day.Probiotics }}</td>
+            <td>{{ day.ProbioticsCalories }}</td>
+            <td>{{ day.ProbioticsProtein }}</td>
+            <td>{{ day.TotalCalories }}</td>
+            <td>{{ day.TotalProtein }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
