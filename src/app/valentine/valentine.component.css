@@ -1,120 +1,145 @@
-/* General Styles */
 .container {
-    text-align: center;
-    margin-top: 50px;
-    font-family: 'Arial', sans-serif;
-    padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff1493;
+}
+
+.gif {
+  width: 200px;
+  max-width: 80%;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Yes Button */
+.yes-btn {
+  background-color: #ff69b4;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.yes-btn:hover {
+  background-color: #ff1493;
+}
+
+/* No Button */
+.no-btn {
+  background-color: #ddd;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Message after clicking No */
+.cute-message {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #ff3b6c;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Accepted Message */
+.accepted {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff1493;
+}
+
+/* Love Poem */
+.poem {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ff3b6c;
+  margin: 20px auto;
+  width: 60%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Fade-in animation for cute messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
-    color: #ff1493;
+    font-size: 1.6rem;
   }
-  
-  /* Image Styling */
+
   .gif {
-    width: 200px;
-    max-width: 80%;
-    margin: 20px 0;
+    width: 150px;
   }
-  
-  /* Buttons Container */
-  .buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  /* Yes Button */
-  .yes-btn {
-    background-color: #ff69b4;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.3s;
-  }
-  
-  .yes-btn:hover {
-    background-color: #ff1493;
-  }
-  
-  /* No Button */
+
+  .yes-btn, 
   .no-btn {
-    background-color: #ddd;
-    color: black;
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-    position: relative;
+    font-size: 16px;
+    padding: 8px 16px;
   }
-  
-  /* Accepted Message */
-  .accepted {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #ff1493;
-  }
-  
-  /* Love Poem */
+
   .poem {
-    font-size: 1.5rem;
-    font-style: italic;
-    color: #ff3b6c;
-    margin: 20px auto;
-    width: 60%;
-    text-align: center;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    width: 80%;
   }
-  
-  /* Responsive Design for Mobile */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 1.6rem;
-    }
-  
-    .gif {
-      width: 150px;
-    }
-  
-    .yes-btn, 
-    .no-btn {
-      font-size: 16px;
-      padding: 8px 16px;
-    }
-  
-    .poem {
-      font-size: 1.2rem;
-      width: 80%;
-    }
+
+  .cute-message {
+    font-size: 1.1rem;
   }
-  
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 1.4rem;
-    }
-  
-    .gif {
-      width: 130px;
-    }
-  
-    .yes-btn, 
-    .no-btn {
-      font-size: 14px;
-      padding: 6px 12px;
-    }
-  
-    .poem {
-      font-size: 1.1rem;
-      width: 90%;
-    }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
   }
-  
+
+  .gif {
+    width: 130px;
+  }
+
+  .yes-btn, 
+  .no-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .poem {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  .cute-message {
+    font-size: 1rem;
+  }
+}
