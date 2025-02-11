@@ -1,0 +1,25 @@
+
+  <div class="container" *ngIf="!isAccepted">
+    <h1>💖 Will You Be My Valentine? 💖</h1>
+    <img src="assets/val.gif" alt="Love GIF" class="gif"/>  
+    <div class="buttons">
+      <button class="yes-btn" (click)="accept()">Yes 💕</button>
+      <button class="no-btn" [ngStyle]="noButtonStyle" (mouseover)="moveNoButton()">No 💔</button>
+    </div>
+  </div>
+  
+  <div class="accepted" *ngIf="isAccepted">
+    <h2>❤️ You Said Yes! ❤️</h2>
+    <img src="https://media.giphy.com/media/3o7TKoWXm3okO1kgHC/giphy.gif" alt="Excited GIF" class="gif"/>
+    <p class="poem">
+      🌹 **Roses are red,** <br>
+      🌊 **Violets are blue,** <br>
+      💖 **My heart beats faster,** <br>
+      🥰 **When I'm with you.** <br><br>
+      ⭐ **Through highs and lows,** <br>
+      🏹 **Come what may,** <br>
+      ❤️ **You are my sunshine,** <br>
+      🕊 **Forever, I’ll stay.**  
+    </p>
+  </div>
+  
